@@ -63,7 +63,7 @@ p {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 80px;
+  padding: 2rem 8rem;
   background-color: #e3e6f3;
   z-index: 1000;
   position: sticky;
@@ -75,51 +75,50 @@ p {
     font-size: 3.5rem;
     font-family: 'Faster One', cursive;
   }
-}
 
-#header div {
-  display: flex;
-  align-items: center;
-  width: 25%;
-}
+  div {
+    display: flex;
+    align-items: center;
+    width: 25%;
 
-#header div input {
-  padding: 0.8rem 2.4rem;
-  width: 100%;
-  border: none;
-  border-radius: 0.4rem;
-  border-top-right-radius: 0;
-  border-bottom-right-radius: 0;
-  font-size: 1.4rem;
-}
+    input {
+      padding: 0.8rem 2.4rem;
+      width: 100%;
+      border: none;
+      border-radius: 0.4rem;
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      font-size: 1.4rem;
+    }
 
-#header div a {
-  padding: 0.65rem;
-  background-color: $green;
-  border-radius: 0.4rem;
-  border-top-left-radius: 0;
-  border-bottom-left-radius: 0;
-  color: $white;
-}
+    a {
+      padding: 0.65rem;
+      background-color: $green;
+      border-radius: 0.4rem;
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0;
+      color: $white;
+    }
+  }
 
-#header .menu-icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: #1a1a1a;
-}
+  .menu-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #1a1a1a;
 
-#header .menu-icon i {
-  font-size: 3.2rem;
-  margin-bottom: 0.6rem;
-}
+    i {
+      font-size: 3.2rem;
+      margin-bottom: 0.6rem;
+    }
 
-#header .menu-icon span {
-  font-size: 1.5rem;
-}
-
-#header .menu-icon:hover {
-  color: $green;
+    span {
+      font-size: 1.5rem;
+    }
+    &:hover {
+      color: $green;
+    }
+  }
 }
 
 /* Category Menu */
@@ -140,12 +139,64 @@ p {
       margin-top: 0.2rem;
     }
   }
+
   .slick-prev {
-    left: 80px;
+    left: 8rem;
     z-index: 3;
   }
 
   .slick-next {
-    right: 80px;
+    right: 8rem;
   }
 }
+
+/* Carousel Banners */
+#carousel-banners {
+  padding: 1.5rem 8rem;
+  display: flex;
+  gap: 0.5rem;
+
+  .carousel-banners-item-1 {
+    width: 70%;
+    flex-shrink: 0;
+
+    .slick-next {
+      right: 2rem;
+    }
+
+    .slick-prev {
+      left: 2rem;
+      z-index: 3;
+    }
+
+    .slick-dots {
+      bottom: 0.8rem;
+    }
+
+    .slick-dots li button:before {
+      font-size: 1.2rem;
+    }
+
+    .slick-dots li.slick-active button:before {
+      color: $white;
+    }
+
+    .slick-dots li button:before {
+      color: $white;
+    }
+  }
+
+  .carousel-banners-item-2 {
+    width: 30%;
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 3rem;
+
+    img:first-child {
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+
+/* Trending products */

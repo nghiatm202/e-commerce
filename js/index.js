@@ -1,19 +1,14 @@
-// ;(function ($) {
-//   $(function () {
-//     $('#category-menu').slick({
-//       infinite: true,
-//       slidesToShow: 8,
-//       slidesToScroll: 8,
-//       autoplaySpeed: 4000,
-//       arrows: true,
-//     })
-//   })
-// })(jQuery)
-
 $('#category-menu').slick({
   infinite: true,
   slidesToShow: 8,
   slidesToScroll: 8,
-  autoplaySpeed: 4000,
   arrows: true,
+})
+
+$('.carousel-banners-item-1').slick({
+  autoplay: true,
+  autoplaySpeed: 2000,
+  arrows: true,
+  fade: true,
+  dots: true,
 })
