@@ -12,3 +12,10 @@ $('.carousel-banners-item-1').slick({
   fade: true,
   dots: true,
 })
+
+$('.trending-products-list').slick({
+  autoplaySpeed: 2000,
+  arrows: true,
+  slidesToShow: 5,
+  slidesToScroll: 5,
+})

@@ -156,6 +156,10 @@ p {
   display: flex;
   gap: 0.5rem;
 
+  .slick-dotted.slick-slider {
+    margin-bottom: 0;
+  }
+
   .carousel-banners-item-1 {
     width: 70%;
     flex-shrink: 0;
@@ -191,7 +195,6 @@ p {
     flex: 1;
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 3rem;
 
     img:first-child {
       margin-bottom: 0.5rem;
@@ -199,4 +202,96 @@ p {
   }
 }
 
-/* Trending products */
+/* Trending Products */
+#trending-products {
+  margin: 0 8rem;
+  border-radius: 1.5rem 1.5rem 0 0;
+  background-image: linear-gradient(315deg, #ec9f05 0%, #ff4e00 74%);
+
+  h3 {
+    color: $white;
+    font-size: 2.2rem;
+    font-weight: 700;
+    padding: 1.5rem 1.1rem;
+    border-bottom: 0.1rem solid rgba(238, 238, 238, 0.787);
+  }
+
+  .trending-products-list {
+    padding: 1.2rem 0 3.2rem;
+    display: flex;
+    justify-content: space-between;
+
+    .slick-next {
+      right: 2rem;
+    }
+
+    .slick-prev {
+      left: 2rem;
+      z-index: 3;
+    }
+
+    .slick-next:before,
+    .slick-prev:before {
+      color: $green;
+    }
+
+    .trending-product-item {
+      background-color: $white;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      margin: 0 1rem;
+      width: 19%;
+      height: 35rem;
+      display: flex;
+      flex-direction: column;
+
+      .product-image {
+        object-fit: cover;
+      }
+
+      .product-name {
+        font-size: 1.4rem;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;
+      }
+
+      .product-price-wrapper {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .product-price-initial {
+        display: flex;
+        align-items: center;
+
+        p {
+          color: #82869e;
+          font-size: 1.4rem;
+          text-decoration-line: line-through;
+          margin-right: 1rem;
+
+          span {
+            text-decoration-line: underline;
+          }
+        }
+
+        .sale-off {
+          color: $green;
+          font-size: 1.4rem;
+        }
+      }
+
+      .product-price {
+        color: $green;
+        font-size: 1.7rem;
+        font-weight: 700;
+
+        span {
+          text-decoration-line: underline;
+        }
+      }
+    }
+  }
+}

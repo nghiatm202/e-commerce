@@ -140,6 +140,9 @@ p {
   display: flex;
   gap: 0.5rem;
 }
+#carousel-banners .slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
 #carousel-banners .carousel-banners-item-1 {
   width: 70%;
   flex-shrink: 0;
@@ -168,12 +171,88 @@ p {
   flex: 1;
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 3rem;
 }
 #carousel-banners .carousel-banners-item-2 img:first-child {
   margin-bottom: 0.5rem;
 }
 
-/* Trending products */
+/* Trending Products */
+#trending-products {
+  margin: 0 8rem;
+  border-radius: 1.5rem 1.5rem 0 0;
+  background-image: linear-gradient(315deg, #ec9f05 0%, #ff4e00 74%);
+}
+#trending-products h3 {
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 700;
+  padding: 1.5rem 1.1rem;
+  border-bottom: 0.1rem solid rgba(238, 238, 238, 0.787);
+}
+#trending-products .trending-products-list {
+  padding: 1.2rem 0 3.2rem;
+  display: flex;
+  justify-content: space-between;
+}
+#trending-products .trending-products-list .slick-next {
+  right: 2rem;
+}
+#trending-products .trending-products-list .slick-prev {
+  left: 2rem;
+  z-index: 3;
+}
+#trending-products .trending-products-list .slick-next:before,
+#trending-products .trending-products-list .slick-prev:before {
+  color: #1a94ff;
+}
+#trending-products .trending-products-list .trending-product-item {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  margin: 0 1rem;
+  width: 19%;
+  height: 35rem;
+  display: flex;
+  flex-direction: column;
+}
+#trending-products .trending-products-list .trending-product-item .product-image {
+  object-fit: cover;
+}
+#trending-products .trending-products-list .trending-product-item .product-name {
+  font-size: 1.4rem;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+#trending-products .trending-products-list .trending-product-item .product-price-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+#trending-products .trending-products-list .trending-product-item .product-price-initial {
+  display: flex;
+  align-items: center;
+}
+#trending-products .trending-products-list .trending-product-item .product-price-initial p {
+  color: #82869e;
+  font-size: 1.4rem;
+  text-decoration-line: line-through;
+  margin-right: 1rem;
+}
+#trending-products .trending-products-list .trending-product-item .product-price-initial p span {
+  text-decoration-line: underline;
+}
+#trending-products .trending-products-list .trending-product-item .product-price-initial .sale-off {
+  color: #1a94ff;
+  font-size: 1.4rem;
+}
+#trending-products .trending-products-list .trending-product-item .product-price {
+  color: #1a94ff;
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+#trending-products .trending-products-list .trending-product-item .product-price span {
+  text-decoration-line: underline;
+}
 
 /*# sourceMappingURL=index.css.map */
