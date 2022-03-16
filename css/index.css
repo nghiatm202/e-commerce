@@ -19,14 +19,6 @@ body {
   font-weight: 400;
 }
 
-.section-p1 {
-  padding: 4rem 8rem;
-}
-
-.section-m1 {
-  margin: 4rem 0;
-}
-
 h1,
 h2,
 h3,
@@ -215,44 +207,133 @@ p {
   display: flex;
   flex-direction: column;
 }
-#trending-products .trending-products-list .trending-product-item .product-image {
+
+/* Trending Products, Products For You */
+.product-image {
   object-fit: cover;
 }
-#trending-products .trending-products-list .trending-product-item .product-name {
+
+.product-name {
   font-size: 1.4rem;
+  color: #000;
   overflow: hidden;
   display: -webkit-box;
+  height: 3.2rem;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
 }
-#trending-products .trending-products-list .trending-product-item .product-price-wrapper {
+
+.product-price-wrapper {
   display: flex;
   justify-content: space-between;
 }
-#trending-products .trending-products-list .trending-product-item .product-price-initial {
+
+.product-price-initial {
   display: flex;
   align-items: center;
 }
-#trending-products .trending-products-list .trending-product-item .product-price-initial p {
+.product-price-initial p {
   color: #82869e;
   font-size: 1.4rem;
   text-decoration-line: line-through;
   margin-right: 1rem;
 }
-#trending-products .trending-products-list .trending-product-item .product-price-initial p span {
+.product-price-initial p span {
   text-decoration-line: underline;
 }
-#trending-products .trending-products-list .trending-product-item .product-price-initial .sale-off {
+.product-price-initial .sale-off {
   color: #1a94ff;
   font-size: 1.4rem;
 }
-#trending-products .trending-products-list .trending-product-item .product-price {
+
+.product-price {
   color: #1a94ff;
   font-size: 1.7rem;
   font-weight: 700;
 }
-#trending-products .trending-products-list .trending-product-item .product-price span {
+.product-price span {
   text-decoration-line: underline;
+}
+
+/* Products For You */
+#products-for-you {
+  margin: 1.5rem 8rem;
+  border-radius: 1.5rem 1.5rem 0 0;
+  background-color: #f4f4f4;
+}
+#products-for-you h3 {
+  color: #000;
+  font-size: 2.2rem;
+  font-weight: 700;
+  padding: 1.5rem 1.1rem;
+  border-bottom: 0.1rem solid #1a94ff;
+}
+#products-for-you .products-for-you-list {
+  padding: 1.2rem 0 1.2rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+#products-for-you .products-for-you-list .product-for-you-item {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1.2rem;
+  margin: 0 1rem 2rem 1rem;
+  width: 15%;
+  height: 32rem;
+  display: flex;
+  flex-direction: column;
+}
+#products-for-you .products-for-you-list .product-for-you-item .product-star {
+  font-size: 1.4rem;
+  padding-top: 0.5rem;
+  color: #eee;
+}
+#products-for-you .products-for-you-list .product-for-you-item .product-star i:first-child {
+  color: #f3b519;
+}
+
+/* Pagination */
+#pagination {
+  padding: 1.5rem 8rem 3rem 8rem;
+  text-align: center;
+}
+#pagination a {
+  text-decoration: none;
+  background-color: #fff;
+  padding: 0.8rem 1.5rem;
+  color: #000;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 4px;
+  border: 0.1rem solid #e4e5f0;
+}
+#pagination a:hover {
+  background-color: #eee;
+}
+#pagination a i {
+  font-size: 14px;
+  font-weight: 600;
+}
+#pagination .ellipsis {
+  border: none;
+}
+#pagination .ellipsis:hover {
+  cursor: default;
+  background-color: #fff;
+}
+#pagination .active {
+  background-color: #1a94ff;
+  color: #fff;
+}
+#pagination .active:hover {
+  background-color: #1a94ff;
+  color: #fff;
+  cursor: default;
+}
+
+footer {
+  border: 2px solid red;
 }
 
 /*# sourceMappingURL=index.css.map */
