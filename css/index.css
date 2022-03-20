@@ -227,6 +227,9 @@ p {
   display: flex;
   justify-content: space-between;
 }
+.product-price-wrapper svg {
+  margin-top: 0.23rem;
+}
 
 .product-price-initial {
   display: flex;
@@ -304,15 +307,15 @@ p {
   padding: 0.8rem 1.5rem;
   color: #000;
   cursor: pointer;
-  font-weight: 600;
-  border-radius: 4px;
+  font-weight: 500;
+  border-radius: 0.4rem;
   border: 0.1rem solid #e4e5f0;
 }
 #pagination a:hover {
   background-color: #eee;
 }
 #pagination a i {
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: 600;
 }
 #pagination .ellipsis {
@@ -332,8 +335,62 @@ p {
   cursor: default;
 }
 
+/* Footer */
 footer {
-  border: 2px solid red;
+  border-top: 0.3rem solid #1a94ff;
+  padding: 1.5rem 8rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+footer .col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 2rem;
+}
+footer .col h4 {
+  font-size: 1.4rem;
+  padding-bottom: 2rem;
+}
+footer .col .certification {
+  margin-top: 2.5rem;
+}
+footer .col .certification img {
+  max-width: 16rem;
+  margin: -1rem 0 0 -0.6rem;
+}
+footer .col .payment-icon {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+footer .col .payment-icon i {
+  font-size: 2.5rem;
+}
+footer .col .payment-icon span {
+  font-size: 1.3rem;
+  margin-left: 0.6rem;
+}
+footer .col .payment-icon:hover {
+  color: #1a94ff;
+}
+footer p {
+  font-size: 1.3rem;
+  margin: 0 0 0.8rem 0;
+}
+footer a {
+  text-decoration: none;
+  color: #222;
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+footer a:hover {
+  color: #1a94ff;
+}
+footer .copyright {
+  text-align: center;
+  width: 100%;
 }
 
 /*# sourceMappingURL=index.css.map */

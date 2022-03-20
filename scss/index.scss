@@ -258,6 +258,10 @@ p {
 .product-price-wrapper {
   display: flex;
   justify-content: space-between;
+
+  svg {
+    margin-top: 0.23rem;
+  }
 }
 
 .product-price-initial {
@@ -345,8 +349,8 @@ p {
     padding: 0.8rem 1.5rem;
     color: $black;
     cursor: pointer;
-    font-weight: 600;
-    border-radius: 4px;
+    font-weight: 500;
+    border-radius: 0.4rem;
     border: 0.1rem solid rgb(228, 229, 240);
 
     &:hover {
@@ -354,7 +358,7 @@ p {
     }
 
     i {
-      font-size: 14px;
+      font-size: 1.4rem;
       font-weight: 600;
     }
   }
@@ -380,6 +384,71 @@ p {
   }
 }
 
+/* Footer */
 footer {
-  border: 2px solid red;
+  border-top: 0.3rem solid $green;
+  padding: 1.5rem 8rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+
+    h4 {
+      font-size: 1.4rem;
+      padding-bottom: 2rem;
+    }
+
+    .certification {
+      margin-top: 2.5rem;
+
+      img {
+        max-width: 16rem;
+        margin: -1rem 0 0 -0.6rem;
+      }
+    }
+    .payment-icon {
+      display: flex;
+      align-items: center;
+      margin-bottom: 1rem;
+
+      i {
+        font-size: 2.5rem;
+      }
+
+      span {
+        font-size: 1.3rem;
+        margin-left: 0.6rem;
+      }
+
+      &:hover {
+        color: $green;
+      }
+    }
+  }
+
+  p {
+    font-size: 1.3rem;
+    margin: 0 0 0.8rem 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: #222;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+
+    &:hover {
+      color: $green;
+    }
+  }
+
+  .copyright {
+    text-align: center;
+    width: 100%;
+  }
 }
