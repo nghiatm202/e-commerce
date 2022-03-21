@@ -1,2 +1,2 @@
 # e-commerce 🚀
-https://e-commerce-ofpwzqqpv-nghiatm202.vercel.app/
+https://e-commerce-six-brown.vercel.app/

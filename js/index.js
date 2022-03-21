@@ -19,5 +19,3 @@ $('.trending-products-list').slick({
   slidesToShow: 5,
   slidesToScroll: 5,
 })
-
-const filter = 1
