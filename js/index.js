@@ -5,6 +5,10 @@ const increaseBtn = document.querySelector('.increase')
 const MainImg = document.getElementById('MainImg')
 const smallImg = document.getElementsByClassName('small-img')
 const categoryMenu = document.getElementById('category-menu')
+const minusIconList = document.querySelectorAll('.minus-icon')
+const filterContentList = document.querySelectorAll('.filter-content')
+
+console.log(smallImg)
 
 // Category Menu
 const categoryList = [
@@ -103,6 +107,14 @@ for (let i = 0; i < smallImg.length; i++) {
     MainImg.src = smallImg[i].src
   })
 }
+
+// Minus icon
+minusIconList.forEach((e, idx) => {
+  e.addEventListener('click', () => {
+    filterContentList[idx].classList.toggle('d-none')
+    e.classList.toggle('bx-plus')
+  })
+})
 
 // Slick
 $('#category-menu').slick({
